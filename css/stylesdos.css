@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-weight: 100;
+}
+body{
+    font-family: "Itim", cursive;
+}
+
+:root{
+    --blue:#005192;
+    --beige:rgb(247,234,218);
+    --black: rgb(00,00,00);
+}
+header{
+    background-color: var(--blue);
+    padding: 15px 20px;
+    color: var(--beige);
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logslog{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo img{
+    height: 100px;
+    width: auto;
+}
+.slogan{
+    display: flex;
+    align-items: start;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu a{
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+header nav li a:hover {
+    color: var(--black);
+    background-color: var(--beige);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav li i:hover{
+    color: var(--black);
+    background-color: var(--beige);
+    border-radius: 90%;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+span:hover{
+    color: var(--black);
+    background-color: var(--beige);
+    border-radius: 90%;
+    font-size: 25px;
+    width: 30px;
+    border-bottom: 1px solid white;
+}
+
+main{
+    color: var(--black);
+    background-color: var(--beige);
+}
+h1{
+    font-family: "Twinkle Star", cursive;
+    text-align: center;
+    color: black;
+}
+.productosVendidos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 10px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.slide{
+    display: flex;
+    animation: cambio 30s infinite;
+}
+.slide img{
+    width: 600px;
+    height: 400px;
+}
+@keyframes cambio {
+    0% {transform: translateX(0%);}
+    33% {transform: translateX(-105%);}
+    66% {transform: translateX(-210%);}
+    100% {transform: translateX(0%);}
+}
+.titulo{
+    font-size: 30px;
+    font-weight: 200px;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,auto));
+    gap: 5px;
+    padding: 20px;
+}
+.elementos{
+    display: flex;
+    flex-direction: column;
+}
+.container-imges{
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    width: 350px;
+    margin: 50px;
+    box-shadow: 5px 5px 15px var(--black);
+}
+.container-img #product1{
+    height: 400px;
+    width: auto;
+}
+.container-info{
+    font-size: 22px;
+}
+.container-img #product2{
+    height: 400px;
+    width: 300px;
+}
+.container-img #product3{
+    height: 300px;
+    width: 300px;
+}
+.container-img #product4{
+    width: 250px;
+    height: 300px;
+    margin-left: 10px;
+}
+.container-info i{
+    margin-left: 280px;
+    background-color: white;
+    border-radius: 90%;
+    color:var(--black); 
+}
+.container-info i:hover{
+    color: white;
+    background-color: var(--black);
+    border-radius: 90%;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color:var(--black);
+    color: var(--beige);
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 18px;
+}
+nav .informacion{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px;
+    margin-top: 90px;
+}
+nav .informacion a{
+    color: var(--beige);
+    text-decoration: none;
+}
+nav .datos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px;
+    margin-top: 90px;
+}
+nav .datos a{
+    color: var(--beige);
+    text-decoration: none;
+}
+nav .redes {
+    margin: 10px;
+    margin-top: 105px;
+    padding: 5px;
+}
+nav .redes a{
+    color: var(--beige);
+    text-decoration: none;
+}
+.sociales{
+    display: flex;
+    gap: 10px;
+    margin-top: 105px;
+    padding: 5px;
+}
+.sociales a i{
+    font-size: 20px;
+    color: var(--beige);
+}
+.sociales a i:hover{
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    transform: scale(1.2);
+}
+.mapa h3{
+    margin-top: 40px;
+    margin-left: 55px;
+
+}
+.mapa iframe{
+    width: 200px;
+    height: 150px;
+    margin: 10px, 30px, 0px, 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 4px solid var(--blue);
+    box-shadow: 0 4px 8px rgb(0,0,0,0,2);
+}
+.logo2 img{
+    display: flex;
+    justify-items: right;
+    border-radius: 10px 0px 0px 0px;
+    width: 125px;
+    margin: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.derechos h3{
+    text-align: center;
+}
+
+
